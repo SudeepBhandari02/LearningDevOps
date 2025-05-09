@@ -1,0 +1,9 @@
+---
+- name: Install Maven
+  hosts: local
+  tasks:
+    - name: Ensure Maven is installed
+      apt:
+        name: maven
+        state: present
+        update_cache: yes
